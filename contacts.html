@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Contacts</title>
+</head>
+
+<body>
+  <ol type="A">
+    <li><b>Address:</b> Ketekibari, Tezpur, Assam</li>
+    <li><b>Mobile No.</b>:9706069180</li>
+    <li><b>Email:</b>: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">ranit.barman@gmail.com</a></li>
+  </ol>
+
+  <hr size="5">
+
+  <form action="mailto:ranit.barman@gmail.com" method="post" enctype="text/plain">   <!-- Allows you to create a form in your HTML document where the user can input and type data.
+      The action mailto opens up your default mail client when you hit the submit button and puts in the email address that you specify after the colon in thr 'from' of the email client.
+    And the method post means that it transfers what the user types into these input fields into the email client.
+    And the enctype specifies the encoding format of what is inputted in the form. In this case, it's encoded into plain text. -->
+    <label>Your Name:</label>      <!-- Specifies the label for the current input in the form -->
+    <input type="text" name="Your Name">    <!-- The element within the form which allows the user to type and enter or upload the input. It's a self-closing tag.
+                              The type and functionality of this input tag completely changes depending upon its type. The name attribte helps to identify the
+                              data that is inside this input. -->
+    <input type="color">
+    <br><label>Do you want to sign up your name?</label>
+    <input type="checkbox">
+    <br><label>Your Email:</label>
+    <input type="email" name="Your Email">    <!-- The email type of input gives some basic functionality to the input, like detecting whether it's an email or not.
+                            What is inputted in the email label goes into the 'to' of the email client. -->
+    <br><label>Yor Message:</label>
+    <br><textarea name="Your Message" rows="8" cols="20"></textarea>  <!-- The textarea tag genrates a text box where you can write your text.
+                                    The row attribute specifiesthe height of your textbox and the coloumn attribte specifies the width of your textbox. -->
+    <br><label>Password:</label>
+    <input type="password">    <!-- The input type which allows you to type passwords. By default, the password is hidden. -->
+    <br><input type="submit">    <!-- The input type which allows you to submit the inputted data. Usually, the submit option appears in the form of a button.-->
+  </form>
+
+</body>
+
+</html>

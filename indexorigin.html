@@ -1,0 +1,148 @@
+<!DOCTYPE html> <!-- This doctype declaration tells the browser to rendner this file as an HTML 5 document. -->
+<html lang="en" dir="ltr">
+<!-- The <dir> tag soecifies the direction of your text. In this case, it's left to right for English. -->
+<!-- This tells the browser that everything in-between the opening and closing html tags will be html code. -->
+
+<head>
+  <!-- The head is the part of the code that holds information about the webpage and tells the browser how it should handle the page. -->
+  <meta charset="utf-8">
+  <!-- This tells the browser that all the text inside our HTML document has been encoded using the utf-8 encoding system,
+         which is very similar to Unicode. It should be the standard character set in your HTML 5 document. -->
+  <title>🖤Ranit's personal webpage👀</title> <!-- This part of the code tells the browser what will be the title of this particular webpage. -->
+</head>
+
+<body>
+  <img
+    src="https://scontent.fshl1-1.fna.fbcdn.net/v/t1.0-1/p240x240/64608491_104163347533411_6128737285635571712_o.jpg?_nc_cat=102&_nc_sid=dbb9e7&_nc_ohc=t5kp0O0u8E0AX_9ayP8&_nc_ht=scontent.fshl1-1.fna&_nc_tp=6&oh=09d38dc13808091366c7bfef1d4b7aa0&oe=5EABD718"
+    alt="My photo">
+  <!-- The <img> tag is a self-closing tag that allows you to incorporate images into your HTML document.
+But it always require an attribute called src which holds the source of the image, be it a url or a local image saved in the same directory as your website.
+And the alt attribute displays an alterntive text in place of the image in case your browser isn't able to render the image. -->
+  <img src="images\Ranitpp TU.jpg" alt="Not found"> <!-- The alt attribute isn't mandatory for the webpage to work, but it's considered best practice to use it since it's very helpful. -->
+  <!-- Using local image here. Had the image not been in 'images' folder, but directly in the same folder as this HTML document,
+        there wouldn't have been a need to specify the file path and we could've directly writtern- "Ranitpp TU.jpg" in source. -->
+  <h1> RANIT BARMAN </h1>
+  <p>
+    <!-- The <p> tag formats the text into a paragraph. -->
+    <em>The game master of <strong><a href="https://en.wikipedia.org/wiki/Darwin%27s_Game">Darwin's Game</a>.</strong></em>
+    <!-- The strong tag formats the included text to be given strong importance upon.
+                                        Use this instead of <b> tag which just makes the text bold. -->
+    <!-- The <em> tag emphasizes the text. Always use this instead of <i> because the later one just
+                                                        italicizes the text, but the previous one emphasizes the text along with italicizing. -->
+  </p>
+
+  <p>
+    A 1st year engineering student from India. Loves anime and games, an aspiring astrophysicist and a novice fiction writer.
+  </p>
+
+  <hr size="4" noshade>
+
+  <h3>Education</h3>
+
+  <ul>
+    <!-- The <ul> tag stands for unordered list, i.e. it generates bullet points for its inside text. -->
+    <li>Attended elementary school, middle and high school at Kendriya Vidyalaya No.1, Tezpur. Graduated on 2018.</li>
+    <!-- The <li> tag stands for list item and it encloses each and every list item of ul. -->
+    <li>Now attending <a href="https://jecassam.ac.in/">Jorhat Engineering College</a> as a 1st year B.Tec CSE student. Will graduate from here on 2023.</li>
+    <!-- The <a> tag stands for anchor tag, which is used to link hyperlinks in your text. The href attribute is used to point to the url you want to link to,
+           and is mandatory in case you aren't using any other attribute (atleast one attribte is mandatory for anchor tag). -->
+  </ul>
+
+  <hr size="4" noshade>
+
+  <h3><a href="hobbies.html" target="_blank">My Hobbies</a></h3>
+  <!-- target="_blank" is an anchor element attribute that
+               opens up hyperlinks in new tabs. -->
+
+  <ol type="I" start="7">
+    <!-- Uses roman numerals instead of default numbers and starts with 7(VII). -->
+    <!-- The <ol> tag stands for ordered list, which generates an ordered list for the text inside,
+    and is pretty much the same as ul as you can infer. By defgault, it generates numbers, and this can be changed with related attributes. -->
+    <li>Watching <a href="https://en.wikipedia.org/wiki/Anime">anime</a></li> <!-- The li tag is used in any type of lists for enclosing every list item of the list. -->
+    <li>Reading manga and fiction</li>
+    <li>Playing games</li>
+    <li>Programming</li>
+  </ol>
+  <!-- We can also nest lists of the same type as well as of other types. -->
+
+  <hr size="4" noshade />
+
+  <h3><a href="contacts.html" target="_blank">Contact Details</a></h3>
+
+  <hr size="3">
+
+  <h4>Download my BEE_Model idea</h4>
+
+  <a href="garbage.html" target="_blank"><img src="images\Ranitpp TU.jpg" alt="Wrong file"></a>
+
+  <hr size="3" noshade>
+
+  <h3>Experience</h3>
+
+  <table border="2" cellspacing="20" cellpadding="10">   <!-- The cellspacing attribute defines the size of the space between two cells,
+                and the cellpadding attribute defines the size of the space between the content of a cell and its border.
+                Both attributes are deprecated and have default value 1 pixel. -->
+    <!-- The border attribute lets you add a border to your table of size two pixels. By default, it's one pixel.
+                        Not recommended since this feature has been deprecated. -->
+    <!-- The <table> tag generates a table. By default, the browser will style the table to not have any borders or paddings
+          or anything style-related since those are for CSS. -->
+    <thead>
+      <!-- The <thead> tag stands for table header and it specifies the browser that the included text will be the header of the table. -->
+      <tr>
+        <th>Date</th> <!-- The <th> tag stands for table header cell and is used for adding data to the table header row. -->
+        <th>Work</th>  <!--The text in the table header cells are formatted to bold by default. -->
+        <th>Place/Institution</th>
+      </tr>
+    </thead>     <!-- We can also use this thead element to isolate the header from the body of the table so that we can manipulate it later as we wish
+                without effecting the body of the table. -->
+    <tbody>      <!-- The <tbody> tag stands for table body and it specifies the browser that the included text will be the body ofm the table. -->
+      <tr>
+        <!-- The <tr> tag stand sfor table row and it generates a new row within the table. -->
+        <td>2015</td>
+        <!-- The <td> tag stands for table data and is used for adding data to the table row in the form of cells/coloumns.
+                      Each td adds a new cell to the row.-->
+        <td>Got 1st przie in CryptX in Inscignis</td>
+        <td>Tezpur University</td>
+      </tr>
+      <tr>
+        <td>2016</td>
+        <td>Passed class 10</td>
+        <td>Kendriya Vidyalaya No.1, Tezpur</td>
+      </tr>
+</tbody>    <!-- We can also directly define table rows without using the body and header tags. But using headers and body tag is generally recommended,
+          unless you want to add some extra data outside the body. -->
+</table>
+
+<hr size="4" noshade />
+
+<center><h3>Skills</h3></center>
+
+<table cellspacing="10" bgcolor="#C0C0C0" align="center" border="5">  <!-- The bgcolor attribute assigns color to the table, in this case it's Silver.
+                                  And the center attribute aligns the table to the center of the webpage. -->
+    <tr>
+      <td><table>
+        <tr>
+          <td>C</td>
+          <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>C++</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+      </table></td>
+      <td><table>
+        <tr>
+          <td>Python</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>⭐⭐⭐⭐</td>
+        </tr>
+      </table></td>
+    </tr>
+</table>
+
+</body>
+
+</html>
